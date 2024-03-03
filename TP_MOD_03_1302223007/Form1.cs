@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TP_MOD_03_1302223007
 {
-    public partial class Form1 : Form
+    public partial class InputNamaApp : Form
     {
-        public Form1()
+        public InputNamaApp()
         {
             InitializeComponent();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            labelGreeting.Text = "Halo " + inputNama.Text;
         }
     }
 }
